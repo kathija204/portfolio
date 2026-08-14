@@ -1,74 +1,61 @@
-// ===============================
-// MOBILE MENU
-// ===============================
+// =====MENU ====
 
-const menuIcon = document.getElementById("menu-icon");
+const menuBtn = document.getElementById("menuBtn");
 const navbar = document.getElementById("navbar");
 
-menuIcon.addEventListener("click", () => {
+menuBtn.addEventListener("click", function () {
 
-    navbar.classList.toggle("active");
-
-    const icon = menuIcon.querySelector("i");
-
-    if (navbar.classList.contains("active")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-    } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-    }
+    navbar.classList.toggle("show");
 
 });
 
 
-// ===============================
-// CLOSE MOBILE MENU
-// ===============================
+// ====== CLOSE MENU ======
 
-document.querySelectorAll(".navbar a").forEach(link => {
+const navLinks = document.querySelectorAll(".navbar a");
 
-    link.addEventListener("click", () => {
+navLinks.forEach(function (link) {
 
-        navbar.classList.remove("active");
+    link.addEventListener("click", function () {
 
-        const icon = menuIcon.querySelector("i");
-
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        navbar.classList.remove("show");
 
     });
 
 });
 
 
-// ===============================
-// ACTIVE NAVIGATION
-// ===============================
+//===== ACTIVE NAVIGATION =====
 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar a");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
 
-    let current = "";
+    let currentSection = "";
 
-    sections.forEach(section => {
+    sections.forEach(function (section) {
 
         const sectionTop = section.offsetTop - 150;
 
         if (window.scrollY >= sectionTop) {
-            current = section.getAttribute("id");
+
+            currentSection = section.getAttribute("id");
+
         }
 
     });
 
-    navLinks.forEach(link => {
+
+    navLinks.forEach(function (link) {
 
         link.classList.remove("active");
 
-        if (link.getAttribute("href") === "#" + current) {
+        if (
+            link.getAttribute("href") === "#" + currentSection
+        ) {
+
             link.classList.add("active");
+
         }
 
     });
@@ -76,9 +63,46 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ===============================
-// FOOTER YEAR
-// ===============================
+// ===== CONTACT FORM =====
+const contactForm =
+    document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    if (!name || !email || !message) {
+
+        alert("Please fill all the fields.");
+
+        return;
+
+    }
+
+
+    alert(
+        "Thank you " +
+        name +
+        "! Your message has been received."
+    );
+
+
+    contactForm.reset();
+
+});
+
+
+// ==== FOOTER YEAR ====
 
 document.getElementById("year").textContent =
     new Date().getFullYear();

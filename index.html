@@ -5,107 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kathijal Beevi | Java Full Stack Developer</title>
+    <title>Kathija | Java Full Stack Developer</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= HEADER ================= -->
 
     <header class="header">
 
         <a href="#home" class="logo">
-            &lt;Kathija<span>/&gt;</span>
+            <span>&lt;</span>Kathija<span>/&gt;</span>
         </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
 
         <nav class="navbar" id="navbar">
 
             <a href="#home" class="active">Home</a>
             <a href="#about">About Me</a>
+            <a href="Resume (10).pdf">Resume</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
-            <a href="Resume (10).pdf" target="_blank">Resume</a>
 
         </nav>
-
-        <div class="menu-icon" id="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
 
     </header>
 
 
     <!-- ================= HOME ================= -->
 
-    <section class="home" id="home">
+    <section class="home section" id="home">
 
         <div class="home-content">
 
-            <p class="intro">HELLO, I'M</p>
+            <p class="small-title">
+                JAVA FULL STACK DEVELOPER
+            </p>
 
             <h1>
-                Mohammed Kathijal Beevi
+                Hi, I'm <span>Mohammed Kathijal Beevi</span>
             </h1>
 
             <h2>
-                Java <span>Full Stack Developer</span>
+                I build modern web applications.
             </h2>
 
-            <p class="home-description">
-                Building responsive, user-friendly and scalable web applications
-                using modern frontend and backend technologies.
+            <p>
+                Java Full Stack Developer passionate about creating
+                responsive frontend interfaces and powerful backend
+                applications using Java and Spring Boot.
             </p>
 
-            <div class="home-buttons">
+            <div class="buttons">
 
                 <a href="#projects" class="btn primary-btn">
-                    View My Work
+                    View Projects
                 </a>
 
-                <a href="#contact" class="btn secondary-btn">
+                <a href="#contact" class="btn outline-btn">
                     Contact Me
                 </a>
 
             </div>
 
-            <div class="social-icons">
+            <div class="social-links">
 
-                <a href="https://www.linkedin.com/in/mohammed-kathijal-beevi-16b269378/"
-                    target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a href="https://github.com/kathija204"
-                    target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="mailto:kathija195832@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
+                <a href="https://github.com/kathija204" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/mohammed-kathijal-beevi-16b269378" target="_blank">LinkedIn</a>
 
             </div>
 
         </div>
 
 
-        <!-- PROFILE IMAGE -->
-
         <div class="home-image">
 
-            <div class="image-border">
+            <div class="image-circle">
 
-                <img src="reshportfolio.jpeg"
-                    alt="Mohammed Kathijal Beevi">
+                <img src="reshportfolio.jpeg" alt="Kathija">
 
+            </div>
+
+            <div class="tech-text">
+                Java • Spring Boot • JavaScript • PostgreSQL
             </div>
 
         </div>
@@ -113,50 +104,60 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
 
-    <section class="about section" id="about">
+    <!-- ==== ABOUT ==== -->
 
-        <div class="section-title">
+    <section class="section about" id="about">
 
-            <p>GET TO KNOW ME</p>
+        <div class="section-heading">
 
-            <h2>About <span>Me</span></h2>
+            <p>ABOUT ME</p>
+
+            <h2>
+                Turning ideas into
+                <span>real applications.</span>
+            </h2>
 
         </div>
 
 
         <div class="about-container">
 
-           
+            <div class="about-box">
 
-            <div class="about-content">
-
-                <h3>
-                    Java Full Stack Developer
-                </h3>
+                <h3>Who I Am</h3>
 
                 <p>
-                    I am a motivated Java Full Stack Developer Fresher with
-                    knowledge of HTML, CSS, JavaScript, Java, Spring Boot,
-                    Spring Data JPA, REST APIs, SQL and PostgreSQL.
+                    I am a Java Full Stack Developer interested in
+                    developing complete web applications from frontend
+                    interfaces to backend APIs and databases.
                 </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>What I Do</h3>
 
                 <p>
-                    I enjoy developing responsive frontend applications
-                    and integrating them with backend RESTful services and
-                    databases. I have hands-on experience building
-                    full-stack projects using Java and Spring Boot.
+                    I work with HTML, CSS and JavaScript for frontend
+                    development and Java, Spring Boot, REST APIs and
+                    PostgreSQL for backend development.
                 </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>My Goal</h3>
 
                 <p>
-                    I am passionate about learning new technologies,
-                    solving problems and building scalable web applications.
+                    My goal is to continuously improve my technical
+                    skills and build scalable, user-friendly and
+                    professional applications.
                 </p>
-
-                <a href="#contact" class="btn primary-btn">
-                    Let's Connect
-                </a>
 
             </div>
 
@@ -164,153 +165,112 @@
 
     </section>
 
+    </section>
 
-    <!-- ================= SKILLS ================= -->
 
-    <section class="skills section" id="skills">
+<!-- ===== RESUME ===== -->
 
-        <div class="section-title">
+<section class="section resume-section" id="resume">
 
-            <p>MY TECHNOLOGIES</p>
+    <div class="section-heading">
 
-            <h2>Technical <span>Skills</span></h2>
+        <p>MY RESUME</p>
+
+        <h2>
+            My <span>Resume.</span>
+        </h2>
+
+    </div>
+
+    <div class="resume-container">
+
+        <a href="Resume (10).pdf" target="_blank" class="resume-preview">
+
+            <img src="resume-preview.png.jpeg" alt="Kathija Resume">
+
+        </a>
+
+        <a href="Resume (10).pdf"
+           target="_blank"
+           class="resume-btn">
+            View Full Resume
+        </a>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ====SKILLS ==== -->
+
+    <section class="section dark-section" id="skills">
+
+        <div class="section-heading">
+
+            <p>MY SKILLS</p>
+
+            <h2>
+                Technologies I
+                <span>work with.</span>
+            </h2>
 
         </div>
 
 
         <div class="skills-container">
 
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>
+                    Core Java, OOPs, Collections,
+                    Exception Handling
+                </p>
+            </div>
 
-            <!-- FRONTEND -->
 
             <div class="skill-card">
+                <h3>Spring Boot</h3>
+                <p>
+                    REST APIs, JPA, Spring Security,
+                    JWT Authentication
+                </p>
+            </div>
 
-                <div class="skill-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
 
+            <div class="skill-card">
                 <h3>Frontend</h3>
-
-                <div class="skill-list">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
+                <p>
+                    HTML, CSS, JavaScript,
+                    Responsive Design
+                </p>
             </div>
 
 
-            <!-- BACKEND -->
-
             <div class="skill-card">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-server"></i>
-                </div>
-
-                <h3>Backend</h3>
-
-                <div class="skill-list">
-
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Spring Data JPA</span>
-                    <span>JDBC</span>
-                    <span>REST APIs</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- DATABASE -->
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-
                 <h3>Database</h3>
-
-                <div class="skill-list">
-
-                    <span>PostgreSQL</span>
-                    <span>SQL</span>
-                    <span>RDBMS</span>
-
-                </div>
-
+                <p>
+                    PostgreSQL, SQL,
+                    Database Management
+                </p>
             </div>
 
 
-            <!-- CORE JAVA -->
-
             <div class="skill-card">
-
-                <div class="skill-icon">
-                    <i class="fa-brands fa-java"></i>
-                </div>
-
-                <h3>Core Java</h3>
-
-                <div class="skill-list">
-
-                    <span>OOP</span>
-                    <span>Collections</span>
-                    <span>Exception Handling</span>
-                    <span>Multithreading</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- TOOLS -->
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                </div>
-
                 <h3>Tools</h3>
-
-                <div class="skill-list">
-
-                    <span>IntelliJ IDEA</span>
-                    <span>Maven</span>
-                    <span>Git</span>
-                    <span>Postman</span>
-                    <span>VS Code</span>
-                    <span>pgAdmin</span>
-
-                </div>
-
+                <p>
+                    Git, GitHub, Postman,
+                    IntelliJ IDEA, VS Code
+                </p>
             </div>
 
 
-            <!-- PROBLEM SOLVING -->
-
             <div class="skill-card">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-lightbulb"></i>
-                </div>
-
-                <h3>Problem Solving</h3>
-
-                <div class="skill-list">
-
-                    <span>Data Structures</span>
-                    <span>Searching</span>
-                    <span>Sorting</span>
-                    <span>Debugging</span>
-
-                </div>
-
+                <h3>Concepts</h3>
+                <p>
+                    REST API, Authentication,
+                    Authorization and MVC
+                </p>
             </div>
 
         </div>
@@ -318,15 +278,166 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
 
-    <section class="projects section" id="projects">
+    <!-- ==== EXPERIENCE ==== -->
 
-        <div class="section-title">
+    <section class="section" id="experience">
 
-            <p>MY RECENT WORK</p>
+        <div class="section-heading">
 
-            <h2>My <span>Projects</span></h2>
+            <p>EXPERIENCE</p>
+
+            <h2>
+                My development
+                <span>journey.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <p class="date">
+                        FULL STACK DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        Java Full Stack Developer
+                    </h3>
+
+                    <p>
+                        Developed full-stack web applications using
+                        Java, Spring Boot, HTML, CSS, JavaScript and
+                        PostgreSQL.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <p class="date">
+                        PROJECT DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        E-Commerce Application
+                    </h3>
+
+                    <p>
+                        Developed ShopEase with user authentication,
+                        product browsing, product details, cart,
+                        checkout and order management.
+                    </p>
+
+                </div>
+
+            </div>
+
+          <div class="timeline-item">
+
+    <div class="timeline-dot"></div>
+
+    <div class="timeline-content">
+
+        <p class="date">
+            PROJECT DEVELOPMENT
+        </p>
+
+        <h3>
+            Smart Regional Heritage Platform
+        </h3>
+
+        <p>
+            Developed a digital heritage platform for exploring and preserving
+            information about archaeological sites, ancient civilizations and
+            cultural artifacts.
+        </p>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ===== EDUCATION ==== -->
+
+    <section class="section dark-section" id="education">
+
+        <div class="section-heading">
+
+            <p>EDUCATION</p>
+
+            <h2>
+                My academic
+                <span>background.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="education-card">
+
+    <div>
+
+        <p class="date">
+            DEGREE
+        </p>
+
+        <h3>
+            Bachelor of Arts
+        </h3>
+
+        <p>
+            Sri Ram Nallamani Yadava College
+        </p>
+
+    </div>
+
+    
+
+    <div>
+        <p>
+            June 2023 - May 2026
+        </p>
+
+        <p>
+            Kodikurichi, Tenkasi
+        </p>
+    </div>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ==== PROJECTS ==== -->
+
+    <section class="section" id="projects">
+
+        <div class="section-heading">
+
+            <p>MY PROJECTS</p>
+
+            <h2>
+                Featured
+                <span>projects.</span>
+            </h2>
 
         </div>
 
@@ -334,27 +445,41 @@
         <div class="projects-container">
 
 
-            <!-- SHOP EASE -->
+            <!-- PROJECT 01 -->
 
             <div class="project-card">
 
-                <div class="project-number">
-                    01
+                <div class="project-image">
+
+                    <img src="shopease.png.jpeg"
+                         alt="ShopEase Project">
+
                 </div>
+
 
                 <div class="project-content">
 
-                    <h3>ShopEase</h3>
+                    <span class="project-number">
+                        01
+                    </span>
 
-                    <h4>Full-Stack E-Commerce Application</h4>
+                    <h3>
+                        ShopEase
+                    </h3>
+
+                    <h4>
+                        Full-Stack E-Commerce Application
+                    </h4>
 
                     <p>
-                        A full-stack e-commerce application with user
-                        authentication, product browsing, product details,
-                        cart, checkout and order management features.
+                        A full-stack e-commerce application with
+                        user authentication, product browsing,
+                        product details, cart, checkout and
+                        order management features.
                     </p>
 
-                    <div class="project-tech">
+
+                    <div class="tags">
 
                         <span>HTML</span>
                         <span>CSS</span>
@@ -365,27 +490,22 @@
 
                     </div>
 
-                    <div class="project-links">
 
-                        <!-- Replace # with your actual links -->
+                    <div class="project-buttons">
 
-                        <a href="https://github.com/kathija204/shopease.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/kathija204/shopease.git" class="project-btn">
                             Frontend
                         </a>
 
-                        <a href="https://github.com/kathija204/shopease-backend.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/kathija204/shopease-backend.git" class="project-btn">
                             Backend
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1z6MX5vYYjol_hGuGt0JcmvwonIdf0eLi/view" target="_blank">
-                            <i class="fa-solid fa-video"></i>
+                        <a href="https://drive.google.com/file/d/1z6MX5vYYjol_hGuGt0JcmvwonIdf0eLi/view?usp=drivesdk" class="project-btn">
                             Demo Video
                         </a>
 
-                        <a href="https://kathija204.github.io/shopease/" target="_blank">
-                            <i class="fab fa-github"></i>
+                        <a href="https://kathija204.github.io/shopease/" class="project-btn">
                             Live Demo
                         </a>
 
@@ -396,27 +516,41 @@
             </div>
 
 
-            <!-- DIGITAL HERITAGE -->
+
+            <!-- PROJECT 02 -->
 
             <div class="project-card">
 
-                <div class="project-number">
-                    02
+                <div class="project-image">
+
+                    <img src="heritage.png.jpeg"
+                         alt="Digital Heritage Project">
+
                 </div>
+
 
                 <div class="project-content">
 
-                    <h3>Digital Heritage Platform</h3>
+                    <span class="project-number">
+                        02
+                    </span>
 
-                    <h4>Digital Heritage & Artifact Platform</h4>
+                    <h3>
+                        Digital Heritage Platform
+                    </h3>
+
+                    <h4>
+                        Digital Heritage & Artifact Platform
+                    </h4>
 
                     <p>
-                        A full-stack digital heritage platform for exploring
-                        50+ archaeological sites and preserving information
-                        about ancient sites, civilizations and artifacts.
+                        A full-stack digital heritage platform
+                        for exploring archaeological sites,
+                        civilizations and historical artifacts.
                     </p>
 
-                    <div class="project-tech">
+
+                    <div class="tags">
 
                         <span>HTML</span>
                         <span>CSS</span>
@@ -427,27 +561,22 @@
 
                     </div>
 
-                    <div class="project-links">
 
-                        <!-- Replace # with your actual links -->
+                    <div class="project-buttons">
 
-                        <a href="https://github.com/kathija204/heritage_frontend.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/kathija204/heritage_frontend.git" class="project-btn">
                             Frontend
                         </a>
 
-                        <a href="https://github.com/kathija204/heritage_backend.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/kathija204/heritage_backend.git" class="project-btn">
                             Backend
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1N9yTFv0nGlRmLZ4QECOPQR2JtlgXoaVH/view" target="_blank">
-                            <i class="fa-solid fa-video"></i>
+                        <a href="https://drive.google.com/file/d/1N9yTFv0nGlRmLZ4QECOPQR2JtlgXoaVH/view?usp=drivesdk" class="project-btn">
                             Demo Video
                         </a>
 
-                        <a href="https://kathija204.github.io/heritage_frontend/index.html" target="_blank">
-                            <i class="fab fa-github"></i>
+                        <a href="https://drive.google.com/file/d/1N9yTFv0nGlRmLZ4QECOPQR2JtlgXoaVH/view?usp=drivesdk" class="project-btn">
                             Live Demo
                         </a>
 
@@ -456,134 +585,160 @@
                 </div>
 
             </div>
+
+
+
+            
+
 
         </div>
 
     </section>
 
 
-    <!-- ================= CERTIFICATION ================= -->
 
-    <section class="certification section">
+   <!-- ==== CERTIFICATIONS ==== -->
 
-        <div class="section-title">
+<section class="section dark-section" id="certifications">
 
-            <p>MY LEARNING</p>
+    <div class="section-heading">
 
-            <h2>Certification</h2>
+        <p>CERTIFICATIONS</p>
 
-        </div>
+        <h2>My <span>certifications.</span></h2>
 
+    </div>
+
+
+    <div class="certificate-container">
+
+
+        <!-- CERTIFICATE 01 - ADVANCED BACKEND -->
 
         <div class="certificate-card">
 
-            <div class="certificate-icon">
-                <i class="fa-solid fa-certificate"></i>
+            <div class="certificate-number">
+                01
             </div>
 
-            <div>
+            <h3>
+                Advanced Backend Development
+            </h3>
 
-                <h3>
-                    Advanced Backend Development Course
-                </h3>
+            <p>
+                Completed Advanced Backend Development covering
+                Java Backend Development, PostgreSQL, database
+                design and cloud computing fundamentals.
+            </p>
 
-                <p class="certificate-company">
-                    Binary Brains
-                </p>
-
-                <div class="certificate-skills">
-
-                    <span>Java Backend Development</span>
-                    <span>Spring Boot</span>
-                    <span>PostgreSQL</span>
-                    <span>Backend Project Development</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section class="education section" id="education">
-
-        <div class="section-title">
-
-            <p>MY ACADEMIC JOURNEY</p>
-
-            <h2>Education</h2>
+            <a href="binarybraincertficate.pdf"
+               target="_blank"
+               class="certificate-btn">
+                View Certificate →
+            </a>
 
         </div>
 
 
-        <div class="timeline">
+        <!-- CERTIFICATE 02 - ENGLISH -->
 
+        <div class="certificate-card">
 
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2023 – 2026</span>
-
-                    <h3>Bachelor of Arts (BA)</h3>
-
-                    <h4>
-                        Sri Ram Nallamani Yadava College of Arts and Science,
-                        Tenkasi
-                    </h4>
-
-                    <p>
-                        CGPA: <strong>8.05</strong>
-                    </p>
-
-                </div>
-
+            <div class="certificate-number">
+                02
             </div>
 
+            <h3>
+                English Language Communication
+            </h3>
 
-            <div class="timeline-item">
+            <p>
+                Successfully completed English Language
+                Communication under the Naan Mudhalvan
+                Program conducted by Cambridge.
+            </p>
 
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2022 – 2023</span>
-
-                    <h3>Higher Secondary Education (HSC)</h3>
-
-                    <h4>
-                        Sri Paramakalyani Higher Secondary School,
-                        Alwarkurichi
-                    </h4>
-
-                    <p>
-                        Percentage: <strong>79.5%</strong>
-                    </p>
-
-                </div>
-
-            </div>
+            <a href="englishcommunicate.pdf"
+               target="_blank"
+               class="certificate-btn">
+                View Certificate →
+            </a>
 
         </div>
 
-    </section>
+
+        <!-- CERTIFICATE 03 - DIGITAL MARKETING -->
+
+        <div class="certificate-card">
+
+            <div class="certificate-number">
+                03
+            </div>
+
+            <h3>
+                Digital Marketing
+            </h3>
+
+            <p>
+                Successfully completed Digital Marketing
+                under the Naan Mudhalvan Program conducted
+                by Kalvi Institute.
+            </p>
+
+            <a href="digitalmarketing.pdf"
+               target="_blank"
+               class="certificate-btn">
+                View Certificate →
+            </a>
+
+        </div>
 
 
-    <!-- ================= CONTACT ================= -->
+        <!-- CERTIFICATE 04 - EMPLOYABILITY -->
 
-    <section class="contact section" id="contact">
+        <div class="certificate-card">
 
-        <div class="section-title">
+            <div class="certificate-number">
+                04
+            </div>
 
-            <p>LET'S CONNECT</p>
+            <h3>
+                Employability Skills
+            </h3>
 
-            <h2>Contact <span>Me</span></h2>
+            <p>
+                Successfully completed Employability Skills
+                under the Naan Mudhalvan Program conducted
+                by CFBT.
+            </p>
+
+            <a href="employabilityskill.pdf"
+               target="_blank"
+               class="certificate-btn">
+                View Certificate →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+    <!-- ===== CONTACT ===== -->
+
+    <section class="section contact" id="contact">
+
+        <div class="section-heading">
+
+            <p>CONTACT</p>
+
+            <h2>
+                Let's build something
+                <span>great.</span>
+            </h2>
 
         </div>
 
@@ -593,118 +748,79 @@
             <div class="contact-info">
 
                 <h3>
-                    Let's work together!
+                    Get In Touch
                 </h3>
 
                 <p>
-                    I am looking for opportunities to start my career as
-                    a Java Full Stack Developer. Feel free to connect with me.
+                    Feel free to contact me for job opportunities,
+                    projects and collaborations.
                 </p>
 
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <a href="mailto:kathija195832@gmail.com">
-                            kathija195832@gmail.com
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    <div>
-
-                        <h4>Phone</h4>
-
-                        <a href="tel:+917904002408">
-                            +91 7904002408
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <div>
-
-                        <h4>Location</h4>
-
-                        <p>
-                            Tenkasi, Tamil Nadu
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-buttons">
-
-                <a href="mailto:kathija195832@gmail.com"
-                    class="btn primary-btn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Send Email
+                <a href="mailto:kathija195832@gmail.com">
+                    kathija195832@gmail.com
                 </a>
 
-                <a href="https://www.linkedin.com/in/mohammed-kathijal-beevi-16b269378/"
-                    target="_blank"
-                    class="btn secondary-btn">
-
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/mohammed-kathijal-beevi-16b269378" target="_blank">
                     LinkedIn
-
                 </a>
 
-                <a href="https://github.com/kathija204"
-                    target="_blank"
-                    class="btn secondary-btn">
-
-                    <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/kathija204" target="_blank">
                     GitHub
-
                 </a>
 
             </div>
+
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
     </section>
 
+</main>
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
 
-        <p>
-            © <span id="year"></span> Mohammed Kathijal Beevi.
-            All Rights Reserved.
-        </p>
+<!-- ==== FOOTER ==== -->
 
-        <a href="#home" class="back-top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </a>
+<footer>
 
-    </footer>
+    <p>
+        © <span id="year"></span> Kathija.
+        All Rights Reserved.
+    </p>
 
-    <!--Portfolio updated-->
-    <script src="script.js"></script>
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 
